@@ -83,7 +83,7 @@ def is_valid_hex_code(hex_code):
     # Check if the input matches the pattern
     return re.match(pattern, hex_code) is not None
 
-cross_icon = PhotoImage(file="python projects/whiteboard/cross_icon1.png")
+cross_icon = PhotoImage(file="data/cross_icon1.png")
 
 def toggle_grid():
     global is_grid_on
@@ -159,8 +159,8 @@ def color_input():
                font="arial 10 bold",)
     text.place(x=200,y=513)
     
-color_picker_icon = PhotoImage(file="python projects/whiteboard/color_picker.png")
-select_icon = PhotoImage(file="python projects/whiteboard/selected.png")
+color_picker_icon = PhotoImage(file="data/color_picker.png")
+select_icon = PhotoImage(file="data/selected.png")
 
 
 
@@ -191,25 +191,25 @@ cl_pic_id = Button(root,image=color_picker_icon,bg="white",width=28,height=28,co
 cl_pic_id.place(x=150,y=525)
 
 
-grid_icon = PhotoImage(file="python projects/whiteboard/grid.png")
+grid_icon = PhotoImage(file="data/grid.png")
 #grid 
 grid_button_id = Button(root,image=grid_icon,bg="white",width=28,height=28,command=toggle_grid)
 grid_button_id.place(x=800,y=525)
 
 
 #icon 
-image_icon = PhotoImage(file="python projects/whiteboard/logo.png")
+image_icon = PhotoImage(file="data/logo.png")
 root.iconphoto(False,image_icon)
 
 #sidebar 
-color_box = PhotoImage(file="python projects/whiteboard/color.png")
+color_box = PhotoImage(file="data/color.png")
 Label(root,image=color_box,bg="white").place(x=10,y=20)
 
 
-eraser = PhotoImage(file = 'python projects/whiteboard/eraser.png')
+eraser = PhotoImage(file = 'data/eraser.png')
 Button(root,image=eraser,bg="white",command=new_canvas).place(x=30,y=400)
 
-importimage = PhotoImage(file = 'python projects/whiteboard/addimage.png')
+importimage = PhotoImage(file = 'data/addimage.png')
 Button(root,image=importimage,bg="white",command=insertimage).place(x=30,y=450)
 
 
