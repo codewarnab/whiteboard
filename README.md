@@ -12,6 +12,9 @@ The White Board Application is a simple drawing tool built using the Tkinter lib
 - Import images onto the canvas and move them around.
 - Clear the canvas to start fresh.
 
+## Screenshots
+
+![App Screenshot](data/photo_6264710092347782961_y.jpg)
 
 
 ## Demo
