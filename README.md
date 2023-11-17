@@ -29,7 +29,7 @@ https://www.youtube.com/watch?v=kjXMk2vYDwM&feature=youtu.be
 
 ## Authors
 
-- [@blacknut1803](https://www.github.com/blacknut1803)
+- [Arnab Mondal](https://www.github.com/codewarnab)
 
 
 ## Contributing
@@ -46,7 +46,7 @@ Please adhere to this project's `code of conduct`.
 Clone the project
 
 ```bash
-   git clone https://github.com/blacknut1803/whiteboard.git
+   git clone https://github.com/codewarnab/whiteboard.git
 ```
 
 Go to the project directory
