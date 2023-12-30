@@ -126,38 +126,14 @@ def my_callback(event):
 
 
 
-def display_and_select(hex):
+def display_and_select():
     global color
-    color = hex
+    color = askcolor()[1]
     custom_color = Button(root,width=2,height=1,
                           state=DISABLED,
-                          bg=hex)
+                          bg=color)
     custom_color.place(x=200,y=525)
-    
 
-
-
-
-
-
-
-
-
-
-
-def color_input():
-    global  color_picked
-    color_picked = tk.StringVar()
-    global entry,text
-    entry=Entry(root,textvariable=tk.StringVar(),
-                bg="white",fg="black",font="arial 10 bold",
-                width=6)
-
-    entry.place(x=200,y=535)
-    text=Label(root,text="Enter hex code:",
-               bg="white",fg="black",
-               font="arial 10 bold",)
-    text.place(x=200,y=513)
     
 color_picker_icon = PhotoImage(file="data/color_picker.png")
 select_icon = PhotoImage(file="data/selected.png")
@@ -165,29 +141,9 @@ select_icon = PhotoImage(file="data/selected.png")
 
 
 
-def toggle_button_icon():
-    global is_pressed
-    is_pressed = not is_pressed  # Toggle the state
-    
-    if is_pressed:
-        cl_pic_id.config(image=select_icon)
-        color_input()
-    else:
-        cl_pic_id.config(image=color_picker_icon)
-        if  is_valid_hex_code(entry.get()):
-            display_and_select(entry.get())
-        else:
-            messagebox.showwarning("Error","Invalid hex code")
-        entry.destroy()
-        text.destroy()
-
-
-
-
-
 #colorpicker 
 
-cl_pic_id = Button(root,image=color_picker_icon,bg="white",width=28,height=28,command=toggle_button_icon)
+cl_pic_id = Button(root,image=color_picker_icon,bg="white",width=28,height=28,command=display_and_select)
 cl_pic_id.place(x=150,y=525)
 
 
