@@ -17,10 +17,6 @@ The White Board Application is a simple drawing tool built using the Tkinter lib
 ![App Screenshot](data/photo_6264710092347782961_y.jpg)
 
 
-## Demo
-
-https://www.youtube.com/watch?v=kjXMk2vYDwM&feature=youtu.be
-
 
 ## License
 
